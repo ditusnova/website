@@ -29,6 +29,7 @@
 
   /** TEXT COLOURS **/
 
+  --text-accent:#F86A2E;
   --text-white: hsla(0, 0%, 100%, 1);
   --text--Dark-Purple: hsla(270, 100%, 25%, 1);
   --text--Wisteria: hsla(270, 20%, 60%, 1);
@@ -213,11 +214,11 @@ body.nav-active{overflow: hidden; }
 .hover-2 {transition: var(--transition-1);}
 
 .hover-1:is(:hover, :focus-visible) {
-  color: var(--text-midnight-blue);
+  color: var(--text-accent);
   transform: translateX(3px);
 }
 
-.hover-2:is(:hover, :focus-visible) {color: var(--bg-sub-background);}
+.hover-2:is(:hover, :focus-visible) {color: var(--text-accent);}
 
 .profile-card{
   display: flex;
@@ -274,6 +275,16 @@ body.nav-active{overflow: hidden; }
   padding: 8px 16px;
   border-radius: var(--radius-6);
   color: var(--text-dark);
+  background-image: var(--gradient-2);
+  background-size: 200%;
+  background-position: left;
+  color: var(--white);
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: var(--transition-1);
+  padding: 8px 30px;
 }
 
 .btn-secondary {
@@ -334,7 +345,7 @@ body.nav-active{overflow: hidden; }
   #HEADER
 \*-----------------------------------*/
 
-
+.navbar,
 .header .btn {display:none; }
 
 .header{
@@ -408,7 +419,7 @@ body.nav-active{overflow: hidden; }
 }
 
 .navbar-list {
-  border-block-end: 1px solid var(--text-dark);
+  border-block-end: 1px solid var(--te);
 }
 
 .navbar-link {
@@ -437,7 +448,6 @@ font-weight: var(--weight-semiBold);
   columns: 2;
   -webkit-columns: 2;
 }
-
 
 .navbar-bottom-link {
   color: var(--text-dark);
@@ -608,7 +618,7 @@ font-weight: var(--weight-semiBold);
   transition: var(--transition-1);
 }
 
-.slider-card:is(:hover, :focus-visible) .slider-title {color: var(--text--Sky-Magenta); }
+.slider-card:is(:hover, :focus-visible) .slider-title {color: var(--text-accent); }
 
 .slider-subtitle {font-size: var(--fontSize-7); }
 
@@ -954,7 +964,7 @@ font-weight: var(--weight-semiBold);
 
 
 .social-link::is(:hover, :focus-visible) {
-  color: var(text --bg-light-coral);
+  color: var(text --text-accent);
   transform: translateY(-2px);
 }
 
@@ -1256,7 +1266,7 @@ font-weight: var(--weight-semiBold);
     }
 
     .navbar-link:is(:hover, :focus-visible) {
-      color: var(--text--sub2-background-amethyst);
+      color: var(--text-accent);
       transform: translateX(0);
     }
 
