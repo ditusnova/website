@@ -40,7 +40,7 @@ window.addEventListener("scroll", () =>  {
 /*
 SLIDER
 */
-
+/*
 const slider=document.querySelector("[data-slider]");
 const sliderContainer = document.querySelector("[data-slider-container]");
 const sliderPrevBtn = document.querySelector("[data-slider-prev]");
@@ -57,7 +57,7 @@ const moveSliderItem = function () {
 
 /*
 NEXT SLIDE
-*/
+
 
 const slideNext = function() {
     const slideEnd = currentSlidePos >= totalSlidableItems;
@@ -75,7 +75,7 @@ sliderNextBtn.addEventListener("click",slideNext);
 
 /*
 PREVIOUS SLIDE
-*/
+
 
 const slidePrev = function() {
     if(currentSlidePos === 0) {
@@ -98,4 +98,74 @@ window.addEventListener("resize", function () {
     moveSliderItem();
 });
 
+*/
 
+/*
+SLIDER
+*/
+
+const slider = document.querySelector("[data-slider]");
+const sliderContainer = document.querySelector("[data-slider-container]");
+const sliderPrevBtn = document.querySelector("[data-slider-prev]");
+const sliderNextBtn = document.querySelector("[data-slider-next]");
+
+// Function to get the actual number of visible items
+const getVisibleItems = () => {
+  const sliderStyles = getComputedStyle(slider);
+  return Number(sliderStyles.getPropertyValue("--slider-items"));
+};
+
+// Initialize variables for totalSliderVisibleItems and currentSlidePos
+let totalSliderVisibleItems = getVisibleItems();
+let currentSlidePos = 0;
+
+// Function to move the slider to the current slide position
+const moveSliderItem = function () {
+  const lastVisibleSlideIndex = currentSlidePos + totalSliderVisibleItems - 1;
+  const offsetLeft = sliderContainer.children[lastVisibleSlideIndex].offsetLeft;
+  sliderContainer.style.transform = `translateX(-${offsetLeft}px)`;
+};
+
+/*
+NEXT SLIDE
+*/
+
+const slideNext = function () {
+  const slideEnd = currentSlidePos + totalSliderVisibleItems >= sliderContainer.childElementCount;
+
+  if (slideEnd) {
+    currentSlidePos = 0;
+  } else {
+    currentSlidePos++;
+  }
+
+  moveSliderItem();
+};
+
+sliderNextBtn.addEventListener("click", slideNext);
+
+/*
+PREVIOUS SLIDE
+*/
+
+const slidePrev = function () {
+  if (currentSlidePos === 0) {
+    currentSlidePos = sliderContainer.childElementCount - totalSliderVisibleItems;
+  } else {
+    currentSlidePos--;
+  }
+
+  moveSliderItem();
+};
+
+sliderPrevBtn.addEventListener("click", slidePrev);
+
+// Update totalSliderVisibleItems on window resize and adjust currentSlidePos
+window.addEventListener("resize", function () {
+  totalSliderVisibleItems = getVisibleItems();
+
+  // Ensure currentSlidePos stays within valid range after resizing
+  currentSlidePos = Math.max(0, Math.min(currentSlidePos, sliderContainer.childElementCount - totalSliderVisibleItems));
+
+  moveSliderItem();
+});

@@ -49,6 +49,8 @@
   --gradient-2: linear-gradient(135deg, hsl(269, 62%, 75%), hsl(287, 44%, 80%));
   --gradient-3: linear-gradient(135deg, hsl(316, 26%, 57%), hsl(280, 60%, 11%));
   --gradient-4: linear-gradient(135deg, hsl(280, 60%, 11%), hsl(280, 60%, 11%));
+  --gradient-5: linear-gradient(100deg, #F86A2E,#FFFF);
+
   
 
   
@@ -256,10 +258,10 @@ body.nav-active{overflow: hidden; }
 }
 
 .btn {
-  background-image: var(--gradient-2);
+  background-image: var(--gradient-5);
   background-size: 200%;
   background-position: left;
-  color: var(--white);
+  color: var(--text--Dark-Purple);
   font-size: var(--fontSize-6);
   font-weight: var(--weight-bold);
   max-width: max-content;
@@ -274,17 +276,8 @@ body.nav-active{overflow: hidden; }
 .btn-primary {
   padding: 8px 16px;
   border-radius: var(--radius-6);
-  color: var(--text-dark);
-  background-image: var(--gradient-2);
-  background-size: 200%;
-  background-position: left;
-  color: var(--white);
-  max-width: max-content;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  transition: var(--transition-1);
-  padding: 8px 30px;
+  color: var(--text--Dark-Purple);
+
 }
 
 .btn-secondary {
@@ -345,7 +338,7 @@ body.nav-active{overflow: hidden; }
   #HEADER
 \*-----------------------------------*/
 
-.navbar,
+
 .header .btn {display:none; }
 
 .header{
@@ -469,7 +462,7 @@ font-weight: var(--weight-semiBold);
 
 .hero-bg {display: none;}
 
-.hero {padding-block-start: calc(var(--section-padding) + 160px);}
+.hero {padding-block-start: calc(var(--section-padding) + 80px);}
 
 .hero .container {
   display: grid;
@@ -1085,7 +1078,7 @@ font-weight: var(--weight-semiBold);
 
     .topics .section-title {font-size: 2rem; }
 
-    .slider { --slider-items: 3; }
+    .slider { --slider-items: 3; display: flex; justify-content: space-between;}
 
     .slider-item {min-width: calc(33.33% - 13.33px); }
 
@@ -1240,7 +1233,7 @@ font-weight: var(--weight-semiBold);
 
    /* HEADER */
 
-   nav.nav-open-btn,
+   .nav-open-btn,
    .navbar-top,
    .navbar-bottom,
    .copyright-text {display: none; }
