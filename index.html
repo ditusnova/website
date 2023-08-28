@@ -21,6 +21,7 @@
 
 <!-- custom css link -->
   <link rel="stylesheet" href="./01.assets/css/index.css">
+  <link rel="stylesheet" href="/node_modules/boxicons/css/boxicons.min.css">
 
 <link rel="preload" as="image" href="./02.Resources/01.Graphic/hero-banner.png">
 <link rel="preload" as="image" href="./02.Resources/01.Graphic/pattern-2.svg">
@@ -47,7 +48,7 @@
                 </a>
 
             <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                <ion-icon name="close-outline" aria-hidden="true"> </ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
         </div> 
 
@@ -72,9 +73,6 @@
         <li>
             <a href="#contact" class="navbar-link hover-1" data-nav-toggler>Contact</a>
         </li>
-
-
-
 
         </ul>
 
@@ -111,7 +109,7 @@
 
     <!-- HIRE BUTTON -->
 
-    <a href="mailto:your_email@example.com" class="btn btn-primary">Hire me</a>
+    <a href="mailto:your_email@example.com" class="btn btn-primary">Hire Me</a>
 
     <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -208,10 +206,6 @@
                             </button>
                         </div>
 
-                    
-
-
-
                     </div>
 
                     <div class="slider" data-slider>
@@ -220,10 +214,9 @@
                             <li class="slider-item">
                                 <a href="#" class="slider-card">
 
-                                    <figure class="slider-banner img-holder" style="--width:507 ; --height:618 ;">
+                                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
                                     <img src="./02.Resources/01.Graphic/services-AI.svg" width="507" height="618" 
-                                    loading="lazy"  alt="AI-Consulting" class="img-cover">
-                                
+                                    loading="lazy" alt="AI-Consulting" class="img-cover">
                                     </figure>
 
                                     <div class="slider-content">
@@ -268,9 +261,6 @@
                                         <!--<p class="slider-subtitle">5 Articles</p>-->
                                     </div>
 
-
-
-
                                 </a>
                             </li>
                             
@@ -289,9 +279,6 @@
                                         <!--<p class="slider-subtitle">5 Articles</p>-->
                                     </div>
 
-
-
-
                                 </a>
                             </li>
 
@@ -301,7 +288,6 @@
                                     <figure class="slider-banner img-holder" style="--width:507 ; --height:618 ;">
                                     <img src="/02.Resources/01.Graphic/services-consulting.jpg" width="507" height="618" 
                                     loading="lazy"  alt="Consulting" class="img-cover">
-                                
                                     </figure>
 
                                     <div class="slider-content">
@@ -309,9 +295,6 @@
 
                                         <!--<p class="slider-subtitle">15 Articles</p>-->
                                     </div>
-
-
-
 
                                 </a>
                             </li>
@@ -337,43 +320,42 @@
                                 </a>
                             </li>
 
-
-
-
                         </ul>
-
-
                     </div>
 
                 </div>
 
-
             </div>
         </section>
 
-        <!-- FEATURED POST -->
+
+
+
+
+        <!-- 
+           - #FEATURED POST
+         -->
 
         <section class="section feature" aria-label="feature" id="featured">
             <div class="container">
 
                 <h2 class="headline headline-2 section-title">
-                    <a href="./blog/blog_main.html">Latest Blog Articles</a>
+                   <span class="span"> <a href="./blog/blog_main.html">Latest Blog Articles</a>
                 </h2>
 
                 <p class="section-text">
                     Embark on a transformative journey through AI, NLP, self-development, and Python with my diverse and insightful blog articles.
                 </p>
 
-                <ul class="grid-list">
+                <ul class="feature-list">
 
                     <li>
                         <div class="card feature-card">
 
                             <figure class="card-banner img-holder" style="--width:1602; --height:903;">
                             <img src="./02.Resources/01.Graphic/blog_1.svg" width="1602" height="903" loading="lazy" 
-                            alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                            alt="A Beginner's Guide to Understanding Chatbot Technology" class="img-cover">
                             </figure>
-
 
                             <div class="card-content">
 
@@ -399,23 +381,72 @@
 
                                 <div class="card-wrapper">
 
-                                    <!--<div class="profile-card">
-                                        <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
+                                    <div class="profile-card">
+                                        <!-- <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
                                         alt="Joseph" class="profile-banner"> -->
 
                                         <div>
-                                            <!--<p class="card-title">Joseph</p> -->
+                                            <!-- <p class="card-title">Joseph</p> -->
 
                                             <p class="card-subtitle">20 Aug 2023</p>
                                         </div>
                                     </div>
 
-                                    <a href="./blog/blog_post1.html" class="card-btn">Read more</a>
-
+                                    <a href="#" class="card-btn">Read more</a>
 
                                 </div>
 
+                        </div>
 
+                    </div>
+                </li>
+
+                    <li>
+                        <div class="card feature-card">
+
+                            <figure class="card-banner img-holder" style="--width:1602; --height:903;">
+                            <img src="./02.Resources/01.Graphic/blog_2.svg" width="1602" height="903" loading="lazy" 
+                            alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+
+                                <div class="card-wrapper">
+                                    <div class="card-tag">
+                                        <a href="#" class="span hover-2">#Self-help</a>
+
+                                        <a href="#" class="span hover-2">#Online Courses</a>
+                                    </div>
+
+                                    <div class="wrapper">
+                                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                        <span class="span">3 mins read</span>
+                                    </div>
+                                </div>
+
+                                <h3 class="headline headline-3">
+                                    <a href="#" class="card-title hover-2">
+                                        Why Should I Take an Online Course? Exploring the Value of Online Learning and Certificates
+                                    </a>
+                                </h3>
+
+                                <div class="card-wrapper">
+
+                                    <div class="profile-card">
+                                        <!-- <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
+                                        alt="Joseph" class="profile-banner"> -->
+
+                                        <div>
+                                            <!-- <p class="card-title">Joseph</p> -->
+
+                                            <p class="card-subtitle">20 Aug 2023</p>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="card-btn">Read more</a>
+
+                                </div>
 
                             </div>
 
@@ -426,10 +457,9 @@
                         <div class="card feature-card">
 
                             <figure class="card-banner img-holder" style="--width:1602; --height:903;">
-                            <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy" 
-                            alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                            <img src="./02.Resources/01.Graphic/blog_3.png" width="1602" height="903" loading="lazy" 
+                            alt="Unveiling the Ancient Urge to Create Intelligent Machines" class="img-cover">
                             </figure>
-
 
                             <div class="card-content">
 
@@ -449,18 +479,18 @@
 
                                 <h3 class="headline headline-3">
                                     <a href="#" class="card-title hover-2">
-                                        Self-observation is the first step of inner unfolding
+                                        Unveiling the Ancient Urge to Create Intelligent Machines: Tracing the Roots of AI Aspirations
                                     </a>
                                 </h3>
 
                                 <div class="card-wrapper">
 
                                     <div class="profile-card">
-                                        <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
-                                        alt="Joseph" class="profile-banner">
+                                        <!-- <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
+                                        alt="Joseph" class="profile-banner"> -->
 
                                         <div>
-                                            <p class="card-title">Joseph</p>
+                                            <!-- <p class="card-title">Joseph</p> -->
 
                                             <p class="card-subtitle">20 Aug 2023</p>
                                         </div>
@@ -468,13 +498,10 @@
 
                                     <a href="#" class="card-btn">Read more</a>
 
-
                                 </div>
 
-
-
                             </div>
-
+                          
                         </div>
                     </li>
 
@@ -482,10 +509,9 @@
                         <div class="card feature-card">
 
                             <figure class="card-banner img-holder" style="--width:1602; --height:903;">
-                            <img src="./assets/images/featured-3.png" width="1602" height="903" loading="lazy" 
-                            alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                            <img src="./02.Resources/01.Graphic/blog_1.svg" width="1602" height="903" loading="lazy" 
+                            alt="Mastering the Mindset" class="img-cover">
                             </figure>
-
 
                             <div class="card-content">
 
@@ -505,18 +531,18 @@
 
                                 <h3 class="headline headline-3">
                                     <a href="#" class="card-title hover-2">
-                                        Self-observation is the first step of inner unfolding
+                                        Mastering the Mindset: 15 Key Takeaways from Carol S. Dweck's Book 'Mindset'
                                     </a>
                                 </h3>
 
                                 <div class="card-wrapper">
 
                                     <div class="profile-card">
-                                        <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
-                                        alt="Joseph" class="profile-banner">
+                                        <!-- <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
+                                        alt="Joseph" class="profile-banner"> -->
 
                                         <div>
-                                            <p class="card-title">Joseph</p>
+                                            <!-- <p class="card-title">Joseph</p> -->
 
                                             <p class="card-subtitle">20 Aug 2023</p>
                                         </div>
@@ -524,10 +550,7 @@
 
                                     <a href="#" class="card-btn">Read more</a>
 
-
                                 </div>
-
-
 
                             </div>
 
@@ -538,10 +561,9 @@
                         <div class="card feature-card">
 
                             <figure class="card-banner img-holder" style="--width:1602; --height:903;">
-                            <img src="./assets/images/featured-4.png" width="1602" height="903" loading="lazy" 
-                            alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                            <img src="./02.Resources/01.Graphic/blog_1.svg" width="1602" height="903" loading="lazy" 
+                            alt="Unveiling AI's Shortcomings" class="img-cover">
                             </figure>
-
 
                             <div class="card-content">
 
@@ -561,18 +583,18 @@
 
                                 <h3 class="headline headline-3">
                                     <a href="#" class="card-title hover-2">
-                                        Self-observation is the first step of inner unfolding
+                                        Unveiling AI's Shortcomings: 7 Ways in Which AI Has Missed the Mark
                                     </a>
                                 </h3>
 
                                 <div class="card-wrapper">
 
                                     <div class="profile-card">
-                                        <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
-                                        alt="Joseph" class="profile-banner">
+                                        <!-- <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
+                                        alt="Joseph" class="profile-banner"> -->
 
                                         <div>
-                                            <p class="card-title">Joseph</p>
+                                            <!-- <p class="card-title">Joseph</p> -->
 
                                             <p class="card-subtitle">20 Aug 2023</p>
                                         </div>
@@ -580,73 +602,12 @@
 
                                     <a href="#" class="card-btn">Read more</a>
 
-
                                 </div>
-
-
 
                             </div>
 
                         </div>
                     </li>
-
-                    <li>
-                        <div class="card feature-card">
-
-                            <figure class="card-banner img-holder" style="--width:1602; --height:903;">
-                            <img src="./assets/images/featured-5.png" width="1602" height="903" loading="lazy" 
-                            alt="Self-observation is the first step of inner unfolding" class="img-cover">
-                            </figure>
-
-
-                            <div class="card-content">
-
-                                <div class="card-wrapper">
-                                    <div class="card-tag">
-                                        <a href="#" class="span hover-2">#AI</a>
-
-                                        <a href="#" class="span hover-2">#Infographic</a>
-                                    </div>
-
-                                    <div class="wrapper">
-                                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                                        <span class="span">6 mins read</span>
-                                    </div>
-                                </div>
-
-                                <h3 class="headline headline-3">
-                                    <a href="#" class="card-title hover-2">
-                                        Self-observation is the first step of inner unfolding
-                                    </a>
-                                </h3>
-
-                                <div class="card-wrapper">
-
-                                    <div class="profile-card">
-                                        <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" 
-                                        alt="Joseph" class="profile-banner">
-
-                                        <div>
-                                            <p class="card-title">Joseph</p>
-
-                                            <p class="card-subtitle">20 Aug 2023</p>
-                                        </div>
-                                    </div>
-
-                                    <a href="#" class="card-btn">Read more</a>
-
-
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-                    </li>
-
-
 
                 </ul>
 
@@ -656,17 +617,14 @@
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
-
             </div>
 
             <img src="./02.Resources/01.Graphic/shadow-b-3.svg" width="500" height="1500" loading="lazy"
              alt="" class="feature-bg">
 
-
-
         </section>
 
-          <!-- POPULAR TAGS -->   <!-- 
+          <!-- POPULAR TAGS
         <section class="tags" aria-labelledby="tag-label">
             <div class="container">
 
@@ -787,27 +745,25 @@
                         </button>
                     </li>
 
-
                 </ul>
-
-
+                
             </div>
+        </section> -->
 
-        </section> --> 
+          <!-- RECENT POST --> 
 
-          <!-- RECENT POST --> <!-- 
-
-          <section class="section recent-post" id="recent" aria-labelledby="recent-label" >
+          <!-- <section class="section recent-post" id="recent" aria-labelledby="recent-label" >
             <div class="container">
 
                 <div class="post-main">
 
                     <h2 class="headline headline-2 section-title">
-                        <span class="span">Recent posts</span>
+                        <span class="span">Latest blog Articles</span>
                     </h2>
 
                     <p class="section-text">
-                        Don't miss the latest trends
+                        Embark on a transformative journey through AI, NLP, self-development, 
+                        and Python with my diverse and insightful blog articles.
                     </p>
 
                     <ul class="feature-list">
@@ -816,18 +772,17 @@
                             <div class="recent-post-card">
 
                                 <figure class="card-banner img-holder" style="--width:271 ; --height:258 ;">
-                                    <img src="./assets/images/recent-post-1.jpg" width="271" height="258"
-                                    loading="lazy" alt="Helpful Tips for Working from Home as a Freelancer" 
+                                    <img src="./02.Resources/01.Graphic/blog_1.svg" width="271" height="258"
+                                    loading="lazy" alt="A Beginner's Guide to Understanding Chatbot Technology" 
                                     class="img-cover">
                                 </figure>
 
                                 <div class="card-content">
 
-                                    <a href="#" class="card-badge">Self-Development Tips</a>
+                                    <a href="#" class="card-badge">Chatbot</a>
 
                                     <h3 class="headline headline-3 card-title">
-                                        <a href="#" class="link hover-2">Helpful Tips for Working from Home as 
-                                            a Freelancer </a>
+                                        <a href="/blog/blog_post1.html" class="link hover-2"> A Beginner's Guide to Understanding Chatbot Technology</a>
                                     </h3>
 
                                     <p class="card-text">
@@ -837,8 +792,9 @@
 
                                     <div class="card-wrapper">
                                         <div class="card-tag">
-                                            <a href="#" class="span hover-2">#Travel</a>
-                                            <a href="#" class="span hover-2">#Lifestyle</a>
+                                            <a href="#" class="span hover-2">#AI</a>
+
+                                            <a href="#" class="span hover-2">#NLP</a>
                                         </div>
 
                                         <div class="wrapper">
@@ -857,8 +813,8 @@
                             <div class="recent-post-card">
 
                                 <figure class="card-banner img-holder" style="--width:271 ; --height:258 ;">
-                                    <img src="./assets/images/recent-post-2.jpg" width="271" height="258"
-                                    loading="lazy" alt="Helpful Tips for Working from Home as a Freelancer" 
+                                    <img src="/02.Resources/01.Graphic/blog_2.svg" width="271" height="258"
+                                    loading="lazy" alt="Why Should I Take an Online Course?" 
                                     class="img-cover">
                                 </figure>
 
@@ -867,8 +823,8 @@
                                     <a href="#" class="card-badge">Self-Development Tips</a>
 
                                     <h3 class="headline headline-3 card-title">
-                                        <a href="#" class="link hover-2">Helpful Tips for Working from Home as 
-                                            a Freelancer </a>
+                                        <a href="#" class="link hover-2"> Why Should I Take an Online Course? 
+                                            Exploring the Value of Online Learning and Certificates</a>
                                     </h3>
 
                                     <p class="card-text">
@@ -878,8 +834,8 @@
 
                                     <div class="card-wrapper">
                                         <div class="card-tag">
-                                            <a href="#" class="span hover-2">#Travel</a>
-                                            <a href="#" class="span hover-2">#Lifestyle</a>
+                                            <a href="#" class="span hover-2">#Courses</a>
+                                            <a href="#" class="span hover-2">#Self-help</a>
                                         </div>
 
                                         <div class="wrapper">
@@ -898,18 +854,18 @@
                             <div class="recent-post-card">
 
                                 <figure class="card-banner img-holder" style="--width:271 ; --height:258 ;">
-                                    <img src="./assets/images/recent-post-3.jpg" width="271" height="258"
-                                    loading="lazy" alt="Helpful Tips for Working from Home as a Freelancer" 
+                                    <img src="./02.Resources/01.Graphic/blog_3.png" width="271" height="258"
+                                    loading="lazy" alt="Unveiling the Ancient Urge to Create Intelligent Machines" 
                                     class="img-cover">
                                 </figure>
 
                                 <div class="card-content">
 
-                                    <a href="#" class="card-badge">Self-Development Tips</a>
+                                    <a href="#" class="card-badge">Artificial Inteligence</a>
 
                                     <h3 class="headline headline-3 card-title">
-                                        <a href="#" class="link hover-2">Helpful Tips for Working from Home as 
-                                            a Freelancer </a>
+                                        <a href="#" class="link hover-2">Unveiling the Ancient Urge to Create Intelligent Machines: 
+                                            Tracing the Roots of AI Aspirations </a>
                                     </h3>
 
                                     <p class="card-text">
@@ -919,8 +875,8 @@
 
                                     <div class="card-wrapper">
                                         <div class="card-tag">
-                                            <a href="#" class="span hover-2">#Travel</a>
-                                            <a href="#" class="span hover-2">#Lifestyle</a>
+                                            <a href="#" class="span hover-2">#AI</a>
+                                            <a href="#" class="span hover-2">#History</a>
                                         </div>
 
                                         <div class="wrapper">
@@ -939,29 +895,28 @@
                             <div class="recent-post-card">
 
                                 <figure class="card-banner img-holder" style="--width:271 ; --height:258 ;">
-                                    <img src="./assets/images/recent-post-4.jpg" width="271" height="258"
-                                    loading="lazy" alt="Helpful Tips for Working from Home as a Freelancer" 
+                                    <img src="/02.Resources/01.Graphic/blog_5.svg" width="271" height="258"
+                                    loading="lazy" alt="Mastering the Mindset" 
                                     class="img-cover">
                                 </figure>
 
                                 <div class="card-content">
 
-                                    <a href="#" class="card-badge">Self-Development Tips</a>
+                                    <a href="#" class="card-badge">Book Summary</a>
 
                                     <h3 class="headline headline-3 card-title">
-                                        <a href="#" class="link hover-2">Helpful Tips for Working from Home as 
-                                            a Freelancer </a>
+                                        <a href="#" class="link hover-2"> Mastering the Mindset </a>
                                     </h3>
 
                                     <p class="card-text">
-                                        Gosh jaguar ostrich quail one excited dear hello and bound and the and bland 
-                                        moral misheard roadrunner flapped lynx far that and jeepers giggled far and far
+                                        15 Key Takeaways from Carol S. Dweck's Book 'Mindset
+                        
                                     </p>
 
                                     <div class="card-wrapper">
                                         <div class="card-tag">
-                                            <a href="#" class="span hover-2">#Travel</a>
-                                            <a href="#" class="span hover-2">#Lifestyle</a>
+                                            <a href="#" class="span hover-2">#Self-help</a>
+                                            <a href="#" class="span hover-2">#Books</a>
                                         </div>
 
                                         <div class="wrapper">
@@ -980,18 +935,17 @@
                             <div class="recent-post-card">
 
                                 <figure class="card-banner img-holder" style="--width:271 ; --height:258 ;">
-                                    <img src="./assets/images/recent-post-5.jpg" width="271" height="258"
-                                    loading="lazy" alt="Helpful Tips for Working from Home as a Freelancer" 
+                                    <img src="./02.Resources/01.Graphic/blog_1.svg" width="271" height="258"
+                                    loading="lazy" alt="Unveiling AI's Shortcomings" 
                                     class="img-cover">
                                 </figure>
 
                                 <div class="card-content">
 
-                                    <a href="#" class="card-badge">Self-Development Tips</a>
+                                    <a href="#" class="card-badge">Artificial Inteligence</a>
 
                                     <h3 class="headline headline-3 card-title">
-                                        <a href="#" class="link hover-2">Helpful Tips for Working from Home as 
-                                            a Freelancer </a>
+                                        <a href="#" class="link hover-2">Unveiling AI's Shortcomings: 7 Ways in Which AI Has Missed the Mark </a>
                                     </h3>
 
                                     <p class="card-text">
@@ -1001,7 +955,7 @@
 
                                     <div class="card-wrapper">
                                         <div class="card-tag">
-                                            <a href="#" class="span hover-2">#Travel</a>
+                                            <a href="#" class="span hover-2">#AI</a>
                                             <a href="#" class="span hover-2">#Lifestyle</a>
                                         </div>
 
@@ -1016,7 +970,6 @@
 
                             </div>
                         </li>
-
 
                     </ul>
 
@@ -1035,15 +988,13 @@
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                         </a>
 
-
                     </nav>
 
-
-                </div> -->
+                </div> 
 
                 <div class="post-aside grid-list">
 
-                    <div class="card aside-card">
+                   <div class="card aside-card">
 
                         <h3 class="headline headline-2 aside-title">
                             <span class="span">Popular Posts</span>
@@ -1052,81 +1003,69 @@
                         <ul class="popular-list">
 
                             <li>
-
                                 <div class="popular-card">
                                     <figure class="card-banner img-holder" style="--widht:64 ; --height:64 ;">
-                                    <img src="./assets/images/popular-post-1.jpg" width="64" height="64" loading="lazy" 
-                                     alt="Creating is a privilege but it’s also a gift" class="img-cover">
+                                    <img src="/02.Resources/01.Graphic/blog_7.png" width="64" height="64" loading="lazy" 
+                                     alt="Demystifying Spam Filters" class="img-cover">
                                     </figure>
 
                                     <div class="card-content">
 
                                         <h4 class="headline headline-4 card-title">
-                                            <a href="#" class="link hover-2">Creating is a privilege
-                                                 but it’s also a gift</a>
+                                            <a href="#" class="link hover-2">Demystifying Spam Filters:
+                                                 How Do They Keep Your Inbox Clean?</a>
                                         </h4>
 
                                         <div class="warpper">
-                                            <p class="card-subtitle">15 mins read </p>
+                                            <p class="card-subtitle">3 mins read </p>
 
                                             <time class="publish-date" datetime="2023-07-23" >23 July 2023</time>
                                         </div>
 
-
                                     </div>
 
-
                                 </div>
-
-
                             </li>
 
                             <li>
-
                                 <div class="popular-card">
                                     <figure class="card-banner img-holder" style="--widht:64 ; --height:64 ;">
-                                    <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy" 
-                                     alt="Being unique is better than being perfect
+                                    <img src="/02.Resources/01.Graphic/blog_1.svg" width="64" height="64" loading="lazy" 
+                                     alt="Unlocking the Human Spirit
                                      " class="img-cover">
                                     </figure>
 
                                     <div class="card-content">
 
                                         <h4 class="headline headline-4 card-title">
-                                            <a href="#" class="link hover-2">Being unique is better 
-                                                than being perfect
+                                            <a href="#" class="link hover-2">Unlocking the Human Spirit: Why 'Yes to Life' by Viktor 
+                                                Frankl Reigns as the Ultimate Self-Development Book"
                                             </a>
                                         </h4>
 
                                         <div class="warpper">
-                                            <p class="card-subtitle">15 mins read </p>
+                                            <p class="card-subtitle">4 mins read </p>
 
                                             <time class="publish-date" datetime="2023-07-23" >23 July 2023</time>
                                         </div>
 
-
                                     </div>
 
-
                                 </div>
-
-
                             </li>
 
                             <li>
-
                                 <div class="popular-card">
                                     <figure class="card-banner img-holder" style="--widht:64 ; --height:64 ;">
                                     <img src="./assets/images/popular-post-3.jpg" width="64" height="64" loading="lazy" 
-                                     alt="Being unique is better than being perfect
+                                     alt="Mastering the Mindset
                                      " class="img-cover">
                                     </figure>
 
                                     <div class="card-content">
 
                                         <h4 class="headline headline-4 card-title">
-                                            <a href="#" class="link hover-2">Being unique is better 
-                                                than being perfect
+                                            <a href="#" class="link hover-2">Mastering the Mindset: 15 Key Takeaways from Carol S. Dweck's Book 'Mindset
                                             </a>
                                         </h4>
 
@@ -1136,29 +1075,22 @@
                                             <time class="publish-date" datetime="2023-07-23" >23 July 2023</time>
                                         </div>
 
-
                                     </div>
 
-
                                 </div>
-
-
                             </li>
 
                             <li>
-
                                 <div class="popular-card">
                                     <figure class="card-banner img-holder" style="--widht:64 ; --height:64 ;">
-                                    <img src="./assets/images/popular-post-4.jpg" width="64" height="64" loading="lazy" 
-                                     alt="Being unique is better than being perfect
-                                     " class="img-cover">
+                                    <img src="./02.Resources/01.Graphic/blog_1.svg" width="64" height="64" loading="lazy" 
+                                     alt="Getting Started with NLP:" class="img-cover">
                                     </figure>
 
                                     <div class="card-content">
 
                                         <h4 class="headline headline-4 card-title">
-                                            <a href="#" class="link hover-2">Being unique is better 
-                                                than being perfect
+                                            <a href="#" class="link hover-2">Getting Started with NLP: Understanding Text Representation and Tokenization
                                             </a>
                                         </h4>
 
@@ -1168,20 +1100,18 @@
                                             <time class="publish-date" datetime="2023-07-23" >23 July 2023</time>
                                         </div>
 
-
                                     </div>
 
-
                                 </div>
-
-
                             </li>
 
                         </ul>
 
                     </div>
 
-                    <div class="card aside-card">
+
+
+                  <div class="card aside-card">
 
                         <h3 class="headline headline-2 aside-title">
                             <span class="span">Book tips</span>
@@ -1207,9 +1137,9 @@
                                         <p class="card-title">Jane Cooper</p>
 
                                         <time class="card-date" datetime="2023-07-30" >30 July 2023</time>
-                                    
                                         </div>
-                                    </div>         
+                                    </div>     
+
                                 </div>
                             </li>
 
@@ -1231,9 +1161,9 @@
                                         <p class="card-title">Jane Cooper</p>
 
                                         <time class="card-date" datetime="2023-07-30" >30 July 2023</time>
-                                    
                                         </div>
-                                    </div>         
+                                    </div>     
+
                                 </div>
                             </li>
 
@@ -1255,33 +1185,28 @@
                                         <p class="card-title">Jane Cooper</p>
 
                                         <time class="card-date" datetime="2023-07-30" >30 July 2023</time>
-                                    
                                         </div>
-                                    </div>         
+                                    </div>     
+
                                 </div>
                             </li>
-
 
                         </ul>
 
                     </div>
 
 
-                </div>
+                </div> 
 
 
             </div>
           </section>
 
-          
-
-
     </article>
-</main>
+</main> -->
 
  <!-- FOOTER -->
-
- <footer>
+ <!-- <footer>
     <div class="container">
         <div class="card footer">
 
@@ -1293,11 +1218,11 @@
                         <img src="./03.Identity/01.logos/logo-dita.svg" width="119" height="37"
                          loading="lazy"  alt="Dita logo">
                     </a>
-<!--
+
                     <p class="footer-text">
                         When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an unknown 
                         prnoto sans took a galley and scrambled it to five centurie
-                    </p>-->
+                    </p>
 
                     <p class="footer-list-title">Contact me</p>
 
@@ -1306,7 +1231,7 @@
                     </addres>
 
                 </div>
-                <!--
+             
                 <div class="footer-list">
 
                     <p class="footer-list-title">Categories</p>
@@ -1359,7 +1284,7 @@
 
                 </div>
 
-            </div> -->
+            </div> 
 
             <div class="footer-bottom">
 
@@ -1396,7 +1321,21 @@
 
     </div>
 
- </footer>
+ </footer> -->
+
+ <div class="footer container">
+    <p>
+        &#169; Dita Nova 2023 All Rights Reserved
+    </p>
+    <div class="social">
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-pinterest"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+    </div>
+ </div>
+
 
 
 
@@ -1406,9 +1345,6 @@
  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn >
     <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
  </a>
-
-
-
 
 
 <!-- custom js link-->  
