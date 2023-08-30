@@ -280,6 +280,7 @@ body.nav-active { overflow: hidden; }
 .card {
   background-color: var(--bg-sub-background);
   border: 1px solid var(--border-white-alpha-15);
+  margin-top: 100px;
 }
 
 .img-holder {
@@ -357,7 +358,7 @@ body.nav-active { overflow: hidden; }
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-}
+ }
 
 .nav-open-btn,
 .nav-close-btn {
@@ -546,7 +547,7 @@ font-weight: var(--weight-semiBold);
   .header-title {
     width: 90%;
     font-size: 2.6rem;
-    color: var(--bg-sub-background);
+    color: var(--text-accent);
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -560,13 +561,14 @@ font-weight: var(--weight-semiBold);
 
   .post-content {margin-top: 10rem !important;}
 
-  .sub-heading {font-size: 1.2rem; }
+  .sub-heading {font-size:var(--fontSize-3); color: var(--text-accent);margin-bottom: 15px;}
 
   .post-text {
-    font-size: 1rem;
+    font-size: var(--fontSize-4);
     line-height: 1.7rem;
     margin: 1rem 0;
     text-align:justify ;
+    margin-top: 0;
   }
 
   .share{
@@ -581,7 +583,7 @@ font-weight: var(--weight-semiBold);
   }
 
 
-
+  .bullet-point {font-size: var(--fontSize-4); font-weight:var(--weight-semiBold); }
   
   /*-----------------------------------*\
     #FOOTER
